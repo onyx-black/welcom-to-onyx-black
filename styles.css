@@ -1,0 +1,169 @@
+body{
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+  color: #333;
+  margin: 0;
+}
+
+.container {
+  width:820px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.blue-bg{
+  color: #333;
+  background: url(../img/headerimg.jpeg);
+  background-size: cover;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: normal;
+  font-size: 24px;
+  margin-bottom:60px;
+  margin-top:0;
+}
+
+.section-title::after {
+  content: attr(data-subtitle);
+  display:block;
+  font-size: 16px;
+  color: #aaa;
+  padding-top:10px;
+}
+.btn{
+  display: inline-block;
+  width:290px;
+  background: #333;
+  color:#f39800;
+  text-align: center;
+  text-decoration : none;
+  padding : 8px 0;
+  border-radius : 5px;
+  opacity:0.9;
+}
+
+.btn:hover{
+  opacity:1.0;
+  background-color: #fff;
+  border-color: #59b1eb;
+  color: #59b1eb;
+   letter-spacing: 5px;
+}
+
+
+/* header */
+
+header h1{
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 36px;
+  margin-bottom: 6px;
+}
+
+header p{
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+header .container{
+  width:820px;
+  margin: 0 auto;
+  padding: 60px 0;
+  /*background: pink;*/
+  position: relative;
+}
+header img{
+  position: absolute;
+  bottom:0;
+  light: 0;
+  padding: 0 0 0 50px;
+}
+
+/* features */
+
+.feature h1{
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.feature .desc {
+  width:360px;
+}
+/*奇数は右*/
+.feature:nth-of-type(odd) .desc{
+  float: right;
+  padding-left: 40px
+}
+/*偶数は左*/
+.feature:nth-of-type(even) .desc{
+  float: left;
+  padding-right: 40px
+}
+
+.feature:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.feature {
+  overflow: hidden;
+}
+
+/* voices */
+
+.voices { /*voicesの背景色は薄いグレー*/
+  background: #f8f8f8;
+}
+
+.voices .flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.voice{
+  width: 250px;
+  background: #fff;/*利用者の声バック白*/
+  position: relative;/*相対*/
+  box-sizing: border-box;
+  padding: 60px 40px 25px;
+}
+
+
+.voice img{
+  border-radius: 50%;/*利用者画像丸くする*/
+  border: 10px solid #fff;/*#333は白、黒い10pxの囲みをつける*/
+  position: absolute;/*絶対*/
+  left:0;
+  right:0;
+  margin: 0 auto;
+  top:-60px;
+}
+
+.voice h1{
+  text-align:center;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.voices .section-title{
+  margin-bottom: 95px;
+}
+
+/*call-to-action*/
+
+.call-to-action{
+  text-align:center;
+}
+
+.call-to-action .section-title{
+  margin-bottom:15px;
+}
+
+/*footer*/
+
+footer{
+  padding:40px 0;
+  text-align:center;/*中央揃え*/
+  color:#aaa;
+}
